@@ -1,48 +1,55 @@
 * {
+    box-sizing: border-box;
     padding: 0px;
     font-family: 'Source Code Pro', monospace;
 }
 
 body {
     width: 90%;
-    margin: 0 auto;
+    margin: 30px auto 0px;
 }
 
 img {
     width: 100%;
 }
 header {
-    position: relative;
-    margin: 30px 0px;
+    width: 90%;
+    display: block;
+    position: fixed;
 }
 
 .navigation {
-    position: fixed;
-    right: 5%;  
-    background-color: rgba(10, 10, 10, 0.5);
-    backdrop-filter: blur(5px);
-    line-height: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigation .nav-content{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
     border-radius: 30px;
+    padding: 0.5rem;
+    gap: 1rem;
 }
 
-.navigation ul li{
-    display: inline;
-    padding: 0px 20px;
-}
-
-.navigation ul li a{
+.navigation .nav-content div a{
     color: #000000;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 0px 1rem;
+    font-size: 18px;
 }
 
-.navigation ul li a.active{
-    color: #FFFFFF;
+.navigation .nav-content div a.active{
+    background-color: #FFFFFF;
+    border-radius: 50px;
 }
 
-.navigation ul li a:hover {
-    color: #FFFFFF;
+.navigation .nav-content div a:hover {
+    background-color: #FFFFFF;
+    border-radius: 50px;
 }
 
 h1{
@@ -69,6 +76,20 @@ h1{
     color: #FFFFFF;
     text-transform: uppercase;
 }
-.summary-content p {
+.summary-content {
+    display: flex;
+    gap: 1rem;
+    line-height: 25px;
+}
+.summary-content .biograph {
+    flex: 1 1 40%;
+}
+
+.summary-content .description {
+    flex: 1 1 60%;
+}
+
+.summary-content .description p{
     text-align: justify;
+    text-indent: 20px;
 }
