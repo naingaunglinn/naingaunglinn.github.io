@@ -1,8 +1,9 @@
 * {
     padding: 0px;
-    margin: 0px;
+    /* margin: 0px; */
     font-family: 'Source Code Pro', monospace;
 }
+
 body {
     width: 90%;
     margin: 0 auto;
@@ -10,6 +11,10 @@ body {
 
 img {
     width: 100%;
+}
+
+.navigation ul li{
+    display: inline;
 }
 
 .summary-content p {
