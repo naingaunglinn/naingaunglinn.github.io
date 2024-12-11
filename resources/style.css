@@ -1,0 +1,17 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Source Code Pro', monospace;
+}
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+.summary-content p {
+    text-align: justify;
+}
