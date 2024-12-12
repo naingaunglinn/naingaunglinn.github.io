@@ -26,15 +26,13 @@ header {
 .navigation .nav-content{
     display: flex;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(4px);
-    border-radius: 30px;
+    background-color: #000000;
     padding: 0.5rem;
     gap: 1rem;
 }
 
 .navigation .nav-content div a{
-    color: #000000;
+    color: #FFFFFF;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
@@ -44,11 +42,13 @@ header {
 
 .navigation .nav-content div a.active{
     background-color: #FFFFFF;
+    color: #000000;
     border-radius: 50px;
 }
 
 .navigation .nav-content div a:hover {
     background-color: #FFFFFF;
+    color: #000000;
     border-radius: 50px;
 }
 
@@ -71,14 +71,14 @@ h1{
     width: 20px;
 }
 
-.bio span {
+.decorate {
     background-color: #000000;
     color: #FFFFFF;
     text-transform: uppercase;
 }
 .summary-content {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     line-height: 25px;
 }
 .summary-content .biograph {
@@ -91,5 +91,4 @@ h1{
 
 .summary-content .description p{
     text-align: justify;
-    text-indent: 20px;
 }
