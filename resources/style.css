@@ -18,6 +18,10 @@ header {
     position: fixed;
 }
 
+ul {
+    list-style: none;
+}
+
 .navigation {
     display: flex;
     justify-content: flex-end;
@@ -38,12 +42,19 @@ header {
     text-transform: uppercase;
     padding: 0px 1rem;
     font-size: 18px;
+    transition: background-color 0.5s ease;
+    border-radius: 50px;
 }
 
 .navigation .nav-content div a.active{
     background-color: #FFFFFF;
     color: #000000;
     border-radius: 50px;
+    position: absolute;
+    top: 50px;
+    font-size: 35px;
+    box-shadow: 1px 1px 6px;
+    left: 0;
 }
 
 .navigation .nav-content div a:hover {
@@ -75,20 +86,11 @@ h1{
     background-color: #000000;
     color: #FFFFFF;
     text-transform: uppercase;
-}
-.summary-content {
-    display: flex;
-    gap: 2rem;
-    line-height: 25px;
-}
-.summary-content .biograph {
-    flex: 1 1 40%;
+    display: inline;
 }
 
-.summary-content .description {
-    flex: 1 1 60%;
-}
-
-.summary-content .description p{
-    text-align: justify;
+::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
